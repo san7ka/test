@@ -1,0 +1,86 @@
+body {
+    background-image:url('img/bg.jpg');
+    background-size: 100%;
+
+}
+
+.buttons {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 705px;
+}
+
+button {
+    height: 35px;
+    width: 350px;
+    color: blue;
+    font-family: Georgia serif ;
+    font-size: 20px;
+    border: solid blue;
+    border-radius: 10px;
+    background: lightgray;
+}
+
+button:hover {
+    background-color: aliceblue;
+}
+
+/*.departTable {
+    display: none;
+}
+
+.arriveTable {
+    display:none;
+}
+*/
+
+table {
+    margin-top: 20px;
+    margin-right: 10%;
+    margin-left: 10%;
+    background-color: white;
+    border-radius: 10px;
+    border-collapse: collapse;
+}
+
+th {
+    font-family: Georgia serif;
+    width:10%;
+    font-size: 18px;
+    background: blue;
+    color: white;
+    border-collapse: collapse;
+    border-color: blue;
+    height: 40px;
+}
+
+.leftRadius {
+    border-top-left-radius: 10px;
+}
+
+.rightRadius {
+    border-top-right-radius: 10px;
+}
+
+.noBorder {
+    border-top: hidden;
+}
+
+td {
+    text-align: center;
+    border-top: solid lightgray;
+    height: 40px;
+}
+
+.ok {
+    color: green;
+}
+
+.notOk {
+    color: red;
+}
+
+tr:hover {
+    background-color: lightgrey;
+}
