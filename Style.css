@@ -4,36 +4,20 @@ body {
 
 }
 
-.buttons {
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 705px;
-}
-
-button {
-    height: 35px;
-    width: 350px;
-    color: blue;
-    font-family: Georgia serif ;
-    font-size: 20px;
-    border: solid blue;
-    border-radius: 10px;
-    background: lightgray;
-}
-
-button:hover {
-    background-color: aliceblue;
-}
-
-/*.departTable {
+.arriveTable {
     display: none;
 }
 
-.arriveTable {
-    display:none;
+
+.checkbox:checked ~ .arriveTable{
+    display: block;
 }
-*/
+
+.checkbox:checked ~ .departTable{
+    display: none;
+}
+
+
 
 table {
     margin-top: 20px;
