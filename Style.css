@@ -8,13 +8,17 @@ body {
     display: none;
 }
 
+.departTable {
+    display: none;
+}
 
-.checkbox:checked ~ .arriveTable{
+
+.radioArrive:checked ~ .arriveTable{
     display: block;
 }
 
-.checkbox:checked ~ .departTable{
-    display: none;
+.radioDepart:checked ~ .departTable{
+    display: block;
 }
 
 
