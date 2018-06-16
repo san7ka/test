@@ -1,7 +1,6 @@
 body {
     background-image:url('img/bg.jpg');
     background-size: 100%;
-
 }
 
 .arriveTable {
@@ -13,6 +12,10 @@ body {
 }
 
 input[type="radio"] {
+    display: none;
+}
+
+input[type="checkbox"] {
     display: none;
 }
 
@@ -43,7 +46,7 @@ input[type="radio"] {
     color: white;
 }
 
-label {
+.buttons label {
     display: inline-block;
     width: 350px;
     height: 25px;
@@ -57,10 +60,33 @@ label {
     cursor: pointer;
 }
 
-label:hover {
+.buttons label:hover {
     background-color: #fce5bd;
     color: white;
 }
+
+.switch {
+    background-color: white;
+}
+
+.switch label {
+    font-size: 20px;
+}
+
+.switch label span {
+    color: gray;
+    font-size: 15px;
+}
+
+.switch label::before {
+    content: "&#707";
+}
+
+.switch label:hover {
+    cursor: pointer;
+}
+
+
 
 table {
     margin-top: 20px;
@@ -72,7 +98,7 @@ table {
 }
 
 td {
-    text-align: center;
+    text-align: left;
     background-color: lightgrey;
     border: solid white 10px;
     height: 40px;
@@ -100,3 +126,7 @@ td {
 .riskStatus {
     color: orange;
 }
+
+
+/* &#707;
+&#709; */
