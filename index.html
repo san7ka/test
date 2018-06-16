@@ -6,15 +6,39 @@
         <title>Departure\Arriving table</title>
     </head>
     <body>
-      <input type="radio" name="radio" class="radioDepart" id="firstRadio" checked>
-      <input type="radio" name="radio" class="radioArrive" id="secondRadio">
-      <div class="buttons">
-        <label for="firstRadio">Departure</label>
-        <label for="secondRadio">Arrival</label>
-      </div>
+        <input type="radio" name="radio" class="radioDepart" id="firstRadio" checked>
+        <input type="radio" name="radio" class="radioArrive" id="secondRadio">
+        <div class="buttons">
+          <label for="firstRadio">Departure</label>
+          <label for="secondRadio">Arrival</label>
+        </div>
 
         <table class="departTable">
-            <tr>
+          <tr class="mainRow">
+            <th><object type="image/svg+xml" data="img/calendar.svg"></object></th>
+            <th><object type="image/svg+xml" data="img/sunny.svg.xml"></object></th>
+            <th class="planesNumber" class="riskStatus">X planes on the line</th>
+          </tr>
+          <tr>
+            <td class="main">Waiting</td>
+            <td class="main">Check In</td>
+            <td class="main">Boarding</td>
+            <td class="main">Departed</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+            <!-- <tr>
                 <th class="leftRadius">Airline</th>
                 <th>Flight</th>
                 <th>Terminal</th>
@@ -201,7 +225,7 @@
                 <td>Seattle</td>
                 <td>12 Jun 11:51 AM</td>
                 <td class="ok">Departed</td>
-            </tr>
+            </tr> -->
         </table>
         <table class="arriveTable">
             <tr>
