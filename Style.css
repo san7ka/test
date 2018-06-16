@@ -12,6 +12,16 @@ body {
     display: none;
 }
 
+input[type="radio"] {
+    display: none;
+}
+
+.buttons {
+  margin-left: auto;
+  margin-right: auto;
+  width: 716px;
+}
+
 .radioArrive:checked ~ .arriveTable{
     display: block;
 }
@@ -19,11 +29,37 @@ body {
     display: none;
 }
 
+.radioArrive:checked ~ .buttons label[for="secondRadio"] {
+    background-color: blue;
+    color: white;
+}
+
 .radioDepart:checked ~ .departTable{
     display: block;
 }
 
+.radioDepart:checked ~ .buttons label[for="firstRadio"] {
+    background-color: blue;
+    color: white;
+}
 
+label {
+    display: inline-block;
+    width: 350px;
+    height: 25px;
+    font-size: 20px;
+    font-family: Georgia, sans-serif;
+    font-weight: bold;
+    color:blue;
+    text-align: center;
+    border: solid blue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+label:hover {
+    background-color: lightblue;
+}
 
 table {
     margin-top: 20px;
