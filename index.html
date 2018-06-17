@@ -15,8 +15,8 @@
 
         <table class="departTable">
           <tr class="mainRow">
-            <th><object type="image/svg+xml" data="img/calendar.svg"></object></th>
-            <th><object type="image/svg+xml" data="img/sunny.svg.xml"></object></th>
+            <th id="calendar"><object type="image/svg+xml" data="img/calendar.svg" width="50%" height="50%"></object></th>
+            <th id="weather"><object type="image/svg+xml" data="img/sunny.svg.xml" width="50%" height="50%"></object></th>
             <th class="planesNumber" class="riskStatus">X planes on the line</th>
           </tr>
           <tr>
@@ -27,15 +27,42 @@
           </tr>
           <tr>
             <td colspan="4" class="switch">
-              <input type="checkbox" id="sevenToEight">
+              <input type="checkbox" class="openRow" id="sevenToEight" checked>
               <label class="openClose" for="sevenToEight">7am - 8am <span class="under">3 planes</span></label>
             </td>
             <td class="switch"></td>
             <td class="switch"></td>
             <td class="switch"></td>
           </tr>
-          <tr>
-            <td></td>
+          <tr class="sevenToEightHide">
+            <td>
+              <table class="planePane">
+                <tr>
+                  <td class="planePaneTD"></td>
+                  <td class="planePaneTD"><object type="image/svg+xml" data="img/american-airlines_logo.svg"></object></td>
+                  <td class="planePaneTD">AA1598</td>
+                </tr>
+                <tr>
+                  <td class="planePaneTD"></td>
+                  <td class="planePaneTD">Chicago</td>
+                  <td class="planePaneTD"></td>
+                </tr>
+                <tr>
+                  <td class="planePaneTD"></td>
+                  <td class="planePaneTD">Terminal: 4</td>
+                  <td class="planePaneTD">Gate 47A</td>
+                </tr>
+                <tr>
+                  <td class="planePaneTD"></td>
+                  <td class="planePaneTD">Time: 7:15 AM</td>
+                  <td class="planePaneTD"></td>
+                </tr>
+              </table>
+
+
+
+
+            </td>
             <td></td>
             <td></td>
             <td></td>

@@ -11,6 +11,10 @@ body {
     display: none;
 }
 
+/* .sevenToEightHide {
+    display:none;
+} */
+
 input[type="radio"] {
     display: none;
 }
@@ -79,14 +83,20 @@ input[type="checkbox"] {
 }
 
 .switch label::before {
-    content: "&#707";
+    content: "\227B";
 }
 
 .switch label:hover {
     cursor: pointer;
 }
 
+.openRow:checked ~ label::before {
+    content: "\2228";
+}
 
+.openRow:checked ~ tr .sevenToEightHide  {
+    display: block;
+}
 
 table {
     margin-top: 20px;
@@ -116,8 +126,16 @@ td {
     width: 300px;
 }
 
+#calendar {
+    text-align: right;
+}
+
+#weather {
+    text-align: left;
+}
+
 .planesNumber {
-    font-size: 30px;
+    font-size: 20px;
     color: orange;
 }
 
@@ -127,6 +145,14 @@ td {
     color: orange;
 }
 
+.planePane {
+    background-color: #f3f7de;
+    margin: 5px;
+    border-radius: 10px;
+    border-collapse: collapse;
+}
 
-/* &#707;
-&#709; */
+.planePaneTD {
+    background-color: #f3f7de;
+    border: 1px #f3f7de;
+}
