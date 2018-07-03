@@ -1,158 +1,44 @@
 body {
-    background-image:url('img/bg.jpg');
-    background-size: 100%;
-}
-
-.arriveTable {
-    display: none;
-}
-
-.departTable {
-    display: none;
-}
-
-/* .sevenToEightHide {
-    display:none;
-} */
-
-input[type="radio"] {
-    display: none;
-}
-
-input[type="checkbox"] {
-    display: none;
+  background-image:url('img/bg.jpg');
+  background-size: 100% contain;
 }
 
 .buttons {
-    margin-left: auto;
-    margin-right: auto;
-    width: 716px;
+  width: 710px;
+  height: 35px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.radioArrive:checked ~ .arriveTable{
-    display: block;
-}
-.radioArrive:checked ~ .departTable{
-    display: none;
+.input {
+  display: none;
 }
 
-.radioArrive:checked ~ .buttons label[for="secondRadio"] {
-    background-color: orange;
-    color: white;
+.buttons_label {
+  border: solid orange;
+  border-radius: 10px;
+  text-align: center;
+  font-style: georgia;
+  font-size: 25px;
+  font-weight: bold;
+  color: orange;
 }
 
-.radioDepart:checked ~ .departTable{
-    display: block;
+#depart:checked ~ #arriveTable {
+  display: none;
 }
 
-.radioDepart:checked ~ .buttons label[for="firstRadio"] {
-    background-color: orange;
-    color: white;
+#depart:checked ~ .buttons :first-child {
+  color: white;
+  background-color: orange;
 }
 
-.buttons label {
-    display: inline-block;
-    width: 350px;
-    height: 25px;
-    font-size: 20px;
-    font-family: Georgia, sans-serif;
-    font-weight: bold;
-    color: orange;
-    text-align: center;
-    border: solid orange;
-    border-radius: 10px;
-    cursor: pointer;
+#arrive:checked ~ #departTable {
+  display: none;
 }
 
-.buttons label:hover {
-    background-color: #fce5bd;
-    color: white;
-}
-
-.switch {
-    background-color: white;
-}
-
-.switch label {
-    font-size: 20px;
-}
-
-.switch label span {
-    color: gray;
-    font-size: 15px;
-}
-
-.switch label::before {
-    content: "\227B";
-}
-
-.switch label:hover {
-    cursor: pointer;
-}
-
-.openRow:checked ~ label::before {
-    content: "\2228";
-}
-
-.openRow:checked ~ tr .sevenToEightHide  {
-    display: block;
-}
-
-table {
-    margin-top: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: white;
-    border-collapse: separate;
-
-}
-
-td {
-    text-align: left;
-    background-color: lightgrey;
-    border: solid white 10px;
-    height: 40px;
-}
-
-.main {
-    position: relative;
-    background-color: white;
-    font-family: Georgia, serif;
-    font-size: 20px;
-    font-weight: bold;
-    color: black;
-    text-align: center;
-    border: solid white 10px;
-    width: 300px;
-}
-
-#calendar {
-    text-align: right;
-}
-
-#weather {
-    text-align: left;
-}
-
-.planesNumber {
-    font-size: 20px;
-    color: orange;
-}
-
-
-/* Зеленый до 15 самолетов, оранжевый 15-30, красный больше 30 - на будущее */
-.riskStatus {
-    color: orange;
-}
-
-.planePane {
-    background-color: #f3f7de;
-    margin: 5px;
-    border-radius: 10px;
-    border-collapse: collapse;
-}
-
-.planePaneTD {
-    background-color: #f3f7de;
-    border: 1px #f3f7de;
+#arrive:checked ~ .buttons :nth-child(2) {
+  color: white;
+  background-color: orange;
 }

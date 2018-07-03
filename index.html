@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <link href="Style.css" rel="stylesheet">
+        <meta charset="utf-8" />
+        <link href="Style.css" rel="stylesheet" />
         <title>Departure\Arriving table</title>
     </head>
     <body>
-        <input type="radio" name="radio" class="radioDepart" id="firstRadio" checked>
-        <input type="radio" name="radio" class="radioArrive" id="secondRadio">
-        <div class="buttons">
-          <label for="firstRadio">Departure</label>
-          <label for="secondRadio">Arrival</label>
-        </div>
-        <table>
+      <input class="input" type="radio" name="radio"  id="depart" checked />
+      <input class="input" type="radio" name="radio" id="arrive" />
+      <form class="buttons">
+        <label class="buttons_label" for="depart">Departure</label>
+        <label class="buttons_label" for="arrive">Arrival</label>
+      </form>
+        <table class="table" id="departTable">
+          <thead>
             <tr>
                 <th class="leftRadius">Airline</th>
                 <th>Flight</th>
@@ -22,6 +23,8 @@
                 <th>Departs</th>
                 <th class="rightRadius">Status</th>
             </tr>
+          </thead>
+          <tbody>
             <tr class="noBorder">
                 <td><img src="img/AmericanAirlines.jpg"></td>
                 <td>AA1598</td>
@@ -201,8 +204,10 @@
                 <td>12 Jun 11:51 AM</td>
                 <td class="ok">Departed</td>
             </tr>
+          </tbody>
         </table>
-        <table class="arriveTable">
+        <table class="table" id="arriveTable">
+          <thead>
             <tr>
                 <th class="leftRadius">Airline</th>
                 <th>Flight</th>
@@ -211,7 +216,9 @@
                 <th>Origin</th>
                 <th>Arrives</th>
                 <th class="rightRadius">Status</th>
-              </tr>
+            </tr>
+          <thead>
+          <tbody>
               <tr class="noBorder">
                 <td><img src="img/VirginAtlantic.gif"></td>
                 <td>VS7</td>
@@ -392,5 +399,6 @@
                 <td>12 Jun 12:06 PM</td>
                 <td class="ok">Arrived 12:06 PM</td>
               </tr>
+          <tbody>
     </body>
 </html>
