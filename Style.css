@@ -4,7 +4,7 @@ body {
 }
 
 .buttons {
-  width: 710px;
+  width: 716px;
   height: 35px;
   margin-top: 10px;
   margin-left: auto;
@@ -15,14 +15,17 @@ body {
   display: none;
 }
 
-.buttons_label {
+.buttons .buttons_label {
+  display: inline-block;
   border: solid orange;
   border-radius: 10px;
   text-align: center;
-  font-style: georgia;
-  font-size: 25px;
+  font-style: georgia sans-serif;
+  font-size: 20px;
   font-weight: bold;
   color: orange;
+  cursor: pointer;
+  width: 350px;
 }
 
 #depart:checked ~ #arriveTable {
