@@ -7,7 +7,7 @@ body {
 .controls {
   width: 716px;
   height: 35px;
-  margin-top: 10px;
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -18,19 +18,19 @@ body {
 
 .controls__item_type_depart, .controls__item_type_arrive {
   display: inline-block;
-  border: solid orange;
+  border: solid #18b8f2;
   border-radius: 10px;
   text-align: center;
-  font-style: georgia sans-serif;
+  font-family: georgia sans-serif;
   font-size: 20px;
   font-weight: bold;
-  color: orange;
+  color: #18b8f2;
   cursor: pointer;
   width: 350px;
 }
 
 .controls__item_type_depart:hover, .controls__item_type_arrive:hover {
-  background-color: #ffdaa0;
+  background-color: #99e3ff;
 }
 
 .input-depart:checked ~ .arrive-table {
@@ -39,7 +39,7 @@ body {
 
 .input-depart:checked ~ .controls .controls__item_type_depart {
   color: white;
-  background-color: orange;
+  background-color: #18b8f2;
 }
 
 .input-arrive:checked ~ .depart-table {
@@ -48,11 +48,68 @@ body {
 
 .input-arrive:checked ~ .controls .controls__item_type_arrive {
   color: white;
-  background-color: orange;
+  background-color: #18b8f2;
 }
 
-table {
+.depart-table {
   width: 80%;
+  margin-top: 30px;
   margin-left: 10%;
   margin-right: 10%;
-  }
+  border-radius: 10px;
+  font-family: georgia sans-serif;
+  font-size: 18px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.depart-table__header {
+  background-color: #18b8f2;
+  color: white;
+
+}
+
+.depart-table__header-column_type_top-left-radius {
+  border-top-left-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.depart-table__header-column_type_top-right-radius {
+  border-top-right-radius: 10px;
+}
+
+.depart-table__body {
+  background-color: white;
+}
+
+.depart-table__body-row_no-top-border {
+  cursor: pointer;
+}
+
+.depart-table__body-row_no-top-border:hover {
+  background-color: lightgray;
+}
+
+.depart-table__body-row {
+  border-top: solid 1px lightgray;
+  cursor: pointer;
+}
+
+.depart-table__body-row:hover {
+  background-color: lightgray;
+}
+
+.depart-table__body-column_status_good {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: green;
+  font-weight: bold;
+}
+
+.depart-table__body-column_status_bad {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: red;
+  font-weight: bold;
+}
