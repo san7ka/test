@@ -6,33 +6,33 @@
         <title>Departure\Arriving table</title>
     </head>
     <body>
-      <input class="input" type="radio" name="switch"  id="depart" checked />
-      <input class="input" type="radio" name="switch" id="arrive" />
-      <form class="buttons">
-        <label class="buttons_label" for="depart">Departure</label>
-        <label class="buttons_label" for="arrive">Arrival</label>
+      <input class="input-depart" type="radio" name="switch"  id="input-depart" checked />
+      <input class="input-arrive" type="radio" name="switch" id="input-arrive" />
+      <form class="controls">
+        <label class="controls__item_type_depart" for="input-depart">Departure</label>
+        <label class="controls__item_type_arrive" for="input-arrive">Arrival</label>
       </form>
-        <table class="table" id="departTable">
-          <thead>
-            <tr>
-                <th class="leftRadius">Airline</th>
+      <table class="depart-table">
+        <thead class="depart-table_head">
+          <tr>
+                <th>Airline</th>
                 <th>Flight</th>
                 <th>Terminal</th>
                 <th>Gate</th>
                 <th>Destination</th>
                 <th>Departs</th>
-                <th class="rightRadius">Status</th>
+                <th>Status</th>
             </tr>
           </thead>
           <tbody>
-            <tr class="noBorder">
+            <tr>
                 <td><img src="img/AmericanAirlines.jpg"></td>
                 <td>AA1598</td>
                 <td>4</td>
                 <td>47A</td>
                 <td>Chicago</td>
                 <td>12 Jun 7:15 AM</td>
-                <td class="ok">Departed</td>
+                <td>Departed</td>
             </tr>
             <tr>
                 <td><img src="img/BritishAirways.gif"></td>
@@ -41,7 +41,7 @@
                 <td>47A</td>
                 <td>Chicago</td>
                 <td>12 Jun 7:15 AM</td>
-                <td class="ok">Departed</td>
+                <td>Departed</td>
             </tr>
             <tr>
                 <td><img src="img/Iberia.gif"></td>
@@ -50,7 +50,7 @@
                 <td>47A</td>
                 <td>Chicago</td>
                 <td>12 Jun 7:15</td>
-                <td class="ok">Departed</td>
+                <td>Departed</td>
             </tr>
             <tr>
                 <td><img src="img/Malaysia.gif"></td>
@@ -59,7 +59,7 @@
                 <td>47A</td>
                 <td>Chicago</td>
                 <td>12 Jun 7:15</td>
-                <td class="ok">Departed</td>
+                <td>Departed</td>
             </tr>
             <tr>
                 <td><img src="img/United.jpg"></td>
@@ -68,7 +68,7 @@
                 <td>81</td>
                 <td>Honolulu</td>
                 <td>12 Jun 11:05 AM</td>
-                <td class="notOk">Delayed 12:35 PM</td>
+                <td>Delayed 12:35 PM</td>
             </tr>
             <tr>
                 <td><img src="img/AmericanAirlines.jpg"></td>
@@ -77,7 +77,7 @@
                 <td>40</td>
                 <td>New Orleans</td>
                 <td>12 Jun 11:20 AM</td>
-                <td class="ok">Departed</td>
+                <td>Departed</td>
             </tr>
             <tr>
                 <td><img src="img/Alaska.jpg"></td>
@@ -86,7 +86,7 @@
                 <td>40</td>
                 <td>New Orleans</td>
                 <td>12 Jun 11:20 AM</td>
-                <td class="ok">Departed</td>
+                <td>Departed</td>
             <tr>
                 <td><img src="img/LAN.gif"></td>
                 <td>LA6968</td>
@@ -94,7 +94,7 @@
                 <td>40</td>
                 <td>New Orleans</td>
                 <td>12 Jun 11:20 AM</td>
-                <td class="ok">Departed</td>
+                <td>Departed</td>
              </tr>
             <tr>
                 <td><img src="img/Quantas.gif"></td>
@@ -103,7 +103,7 @@
                 <td>40</td>
                 <td>New Orleans</td>
                 <td>12 Jun 11:20 AM</td>
-                <td class="ok">Departed</td>
+                <td>Departed</td>
             </tr>
             <tr>
                 <td><img src="img/SouthWest.gif"></td>
@@ -112,7 +112,7 @@
                 <td>17A</td>
                 <td>Las Vegas</td>
                 <td>12 Jun 11:30 AM</td>
-                <td class="ok">Departed</td>
+                <td>Departed</td>
             </tr>
             <tr>
                 <td><img src="img/United.jpg"></td>
@@ -121,7 +121,7 @@
                 <td>86A</td>
                 <td>Monterey</td>
                 <td>12 Jun 11:35 AM</td>
-                <td class="ok">Departed</td>
+                <td>Departed</td>
             </tr>
             <tr>
                 <td><img src="img/AirCanada.gif"></td>
@@ -130,7 +130,7 @@
                 <td>86A</td>
                 <td>Monterey</td>
                 <td>12 Jun 11:35 AM</td>
-                <td class="ok">Departed</td>
+                <td>Departed</td>
             </tr>
             <tr>
                 <td><img src="img/United.jpg"></td>
@@ -139,7 +139,7 @@
                 <td>71A</td>
                 <td>Dallas-Fort Worth</td>
                 <td>12 Jun 11:39 AM</td>
-                <td class="notOk">Delayed 2:30 PM</td>
+                <td>Delayed 2:30 PM</td>
             </tr>
             <tr>
                 <td><img src="img/Alaska.jpg"></td>
@@ -148,7 +148,7 @@
                 <td>61</td>
                 <td>Chicago</td>
                 <td>12 Jun 11:40 AM</td>
-                <td class="ok">Departed</td>
+                <td>Departed</td>
             </tr>
             <tr>
                 <td><img src="img/Singapore.gif"></td>
@@ -157,7 +157,7 @@
                 <td>61</td>
                 <td>Chicago</td>
                 <td>12 Jun 11:40 AM</td>
-                <td class="ok">Departed</td>
+                <td>Departed</td>
             </tr>
             <tr>
                 <td><img src="img/AllNippon.gif"></td>
@@ -166,7 +166,7 @@
                 <td>47A</td>
                 <td>Tokyo</td>
                 <td>12 Jun 11:45 AM</td>
-                <td class="notOk">Delayed 12:30 PM</td>
+                <td>Delayed 12:30 PM</td>
             </tr>
             <tr>
                 <td><img src="img/United.jpg"></td>
@@ -175,7 +175,7 @@
                 <td>47A</td>
                 <td>Tokyo</td>
                 <td>12 Jun 11:45 AM</td>
-                <td class="notOk">Delayed 12:30 PM</td>
+                <td>Delayed 12:30 PM</td>
             </tr>
             <tr>
                 <td><img src="img/LAN.gif"></td>
@@ -184,7 +184,7 @@
                 <td>63</td>
                 <td>Seattle</td>
                 <td>12 Jun 11:51 AM</td>
-                <td class="ok">Departed</td>
+                <td>Departed</td>
             </tr>
             <tr>
                 <td><img src="img/Alaska.jpg"></td>
@@ -193,7 +193,7 @@
                 <td>63</td>
                 <td>Seattle</td>
                 <td>12 Jun 11:51 AM</td>
-                <td class="ok">Departed</td>
+                <td>Departed</td>
             </tr>
             <tr>
                 <td><img src="img/Emirates.gif"></td>
@@ -202,11 +202,11 @@
                 <td>63</td>
                 <td>Seattle</td>
                 <td>12 Jun 11:51 AM</td>
-                <td class="ok">Departed</td>
+                <td>Departed</td>
             </tr>
           </tbody>
         </table>
-        <table class="table" id="arriveTable">
+        <table class="arrive-table">
           <thead>
             <tr>
                 <th class="leftRadius">Airline</th>
@@ -226,7 +226,7 @@
                 <td></td>
                 <td>London</td>
                 <td>12 Jun 11:51 AM</td>
-                <td class="ok">Landed 11:51 AM</td>
+                <td>Landed 11:51 AM</td>
               </tr>
               <tr>
                 <td><img src="img/Delta.jpg"></td>
@@ -235,7 +235,7 @@
                 <td></td>
                 <td>London</td>
                 <td>12 Jun 11:51 AM</td>
-                <td class="ok">Landed 11:51 AM</td>
+                <td>Landed 11:51 AM</td>
               </tr>
               <tr>
                 <td><img src="img/Singapore.gif"></td>
@@ -244,7 +244,7 @@
                 <td></td>
                 <td>London</td>
                 <td>12 Jun 11:51 AM</td>
-                <td class="ok">Landed 11:51 AM</td>
+                <td>Landed 11:51 AM</td>
               </tr>
               <tr>
                 <td><img src="img/Australia.gif"></td>
@@ -253,7 +253,7 @@
                 <td></td>
                 <td>London</td>
                 <td>12 Jun 11:51 AM</td>
-                <td class="ok">Landed 11:51 AM</td>
+                <td>Landed 11:51 AM</td>
               </tr>
               <tr>
                 <td><img src="img/JetAirways.png"></td>
@@ -262,7 +262,7 @@
                 <td></td>
                 <td>London</td>
                 <td>12 Jun 11:51 AM</td>
-                <td class="ok">Landed 11:51 AM</td>
+                <td>Landed 11:51 AM</td>
               </tr>
               <tr>
                 <td><img src="img/Delta.jpg"></td>
@@ -271,7 +271,7 @@
                 <td>36</td>
                 <td>Orlando</td>
                 <td>12 Jun 12:00 PM</td>
-                <td class="notOk">Cancelled</td>
+                <td>Cancelled</td>
               </tr>
               <tr>
                 <td><img src="img/Australia.gif"></td>
@@ -280,7 +280,7 @@
                 <td>36</td>
                 <td>Orlando</td>
                 <td>12 Jun 12:00 PM</td>
-                <td class="ok">Arrived 12:00 PM</td>
+                <td>Arrived 12:00 PM</td>
               </tr>
               <tr>
                 <td><img src="img/VirginAtlantic.gif"></td>
@@ -289,7 +289,7 @@
                 <td>36</td>
                 <td>Orlando</td>
                 <td>12 Jun 12:00 PM</td>
-                <td class="ok">Arrived 12:00 PM</td>
+                <td>Arrived 12:00 PM</td>
               </tr>
               <tr>
                 <td><img src="img/AmericanAirlines.jpg"></td>
@@ -298,7 +298,7 @@
                 <td>50B</td>
                 <td>Las Vegas</td>
                 <td>12 Jun 12:04 PM</td>
-                <td class="ok">Arrived 12:04 PM</td>
+                <td>Arrived 12:04 PM</td>
               </tr>
               <tr>
                 <td><img src="img/Quantas.gif"></td>
@@ -307,7 +307,7 @@
                 <td>50B</td>
                 <td>Las Vegas</td>
                 <td>12 Jun 12:04 PM</td>
-                <td class="ok">Arrived 12:04 PM</td>
+                <td>Arrived 12:04 PM</td>
               </tr>
               <tr>
                 <td><img src="img/Tahiti.gif"></td>
@@ -316,7 +316,7 @@
                 <td>50B</td>
                 <td>Las Vegas</td>
                 <td>12 Jun 12:04 PM</td>
-                <td class="ok">Arrived 12:04 PM</td>
+                <td>Arrived 12:04 PM</td>
               </tr>
               <tr>
                 <td><img src="img/WestJet.gif"></td>
@@ -325,7 +325,7 @@
                 <td>21B</td>
                 <td>Toronto</td>
                 <td>12 Jun 12:05 PM</td>
-                <td class="ok">Landed 12:05 PM</td>
+                <td>Landed 12:05 PM</td>
               </tr>
               <tr>
                 <td><img src="img/Delta.jpg"></td>
@@ -334,7 +334,7 @@
                 <td>21B</td>
                 <td>Toronto</td>
                 <td>12 Jun 12:05 PM</td>
-                <td class="ok">Landed 12:05 PM</td>
+                <td>Landed 12:05 PM</td>
               </tr>
               <tr>
                 <td><img src="img/Quantas.gif"></td>
@@ -343,7 +343,7 @@
                 <td>21B</td>
                 <td>Toronto</td>
                 <td>12 Jun 12:05 PM</td>
-                <td class="ok">Landed 12:05 PM</td>
+                <td>Landed 12:05 PM</td>
               </tr>
               <tr>
                 <td><img src="img/AirCanada.gif"></td>
@@ -352,7 +352,7 @@
                 <td>69B</td>
                 <td>Toronto</td>
                 <td>12 Jun 12:06 PM</td>
-                <td class="ok">Arrived 12:06 PM</td>
+                <td>Arrived 12:06 PM</td>
               </tr>
               <tr>
                 <td><img src="img/NewZeland.gif"></td>
@@ -361,7 +361,7 @@
                 <td>69B</td>
                 <td>Toronto</td>
                 <td>12 Jun 12:06 PM</td>
-                <td class="ok">Arrived 12:06 PM</td>
+                <td>Arrived 12:06 PM</td>
               </tr>
               <tr>
                 <td><img src="img/Singapore.gif"></td>
@@ -370,7 +370,7 @@
                 <td>69B</td>
                 <td>Toronto</td>
                 <td>12 Jun 12:06 PM</td>
-                <td class="ok">Arrived 12:06 PM</td>
+                <td>Arrived 12:06 PM</td>
               </tr>
               <tr>
                 <td><img src="img/United.jpg"></td>
@@ -379,7 +379,7 @@
                 <td>69B</td>
                 <td>Toronto</td>
                 <td>12 Jun 12:06 PM</td>
-                <td class="ok">Arrived 12:06 PM</td>
+                <td>Arrived 12:06 PM</td>
               </tr>
               <tr>
                 <td><img src="img/Australia.gif"></td>
@@ -388,7 +388,7 @@
                 <td>69B</td>
                 <td>Toronto</td>
                 <td>12 Jun 12:06 PM</td>
-                <td class="ok">Arrived 12:06 PM</td>
+                <td>Arrived 12:06 PM</td>
               </tr>
               <tr>
                 <td><img src="img/JetAirways.png"></td>
@@ -397,7 +397,7 @@
                 <td>55A</td>
                 <td>New York</td>
                 <td>12 Jun 12:06 PM</td>
-                <td class="ok">Arrived 12:06 PM</td>
+                <td>Arrived 12:06 PM</td>
               </tr>
           <tbody>
         </table>

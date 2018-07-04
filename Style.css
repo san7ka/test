@@ -1,9 +1,10 @@
 body {
   background-image:url('img/bg.jpg');
-  background-size: 100% contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.buttons {
+.controls {
   width: 716px;
   height: 35px;
   margin-top: 10px;
@@ -11,11 +12,11 @@ body {
   margin-right: auto;
 }
 
-.input {
+.input-depart, .input-arrive {
   display: none;
 }
 
-.buttons .buttons_label {
+.controls__item_type_depart, .controls__item_type_arrive {
   display: inline-block;
   border: solid orange;
   border-radius: 10px;
@@ -28,20 +29,30 @@ body {
   width: 350px;
 }
 
-#depart:checked ~ #arriveTable {
+.controls__item_type_depart:hover, .controls__item_type_arrive:hover {
+  background-color: #ffdaa0;
+}
+
+.input-depart:checked ~ .arrive-table {
   display: none;
 }
 
-#depart:checked ~ .buttons :first-child {
+.input-depart:checked ~ .controls .controls__item_type_depart {
   color: white;
   background-color: orange;
 }
 
-#arrive:checked ~ #departTable {
+.input-arrive:checked ~ .depart-table {
   display: none;
 }
 
-#arrive:checked ~ .buttons :nth-child(2) {
+.input-arrive:checked ~ .controls .controls__item_type_arrive {
   color: white;
   background-color: orange;
 }
+
+table {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  }
