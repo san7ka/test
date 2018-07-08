@@ -1,115 +1,58 @@
-body {
-  background-image:url('img/bg.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+@import url('styles/controls.css');
+@import url('styles/body.css');
+@import url('styles/flights-info.css');
 
-.controls {
-  width: 716px;
-  height: 35px;
+
+
+
+.table {
   margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.input-depart, .input-arrive {
-  display: none;
-}
-
-.controls__item_type_depart, .controls__item_type_arrive {
-  display: inline-block;
-  border: solid #18b8f2;
   border-radius: 10px;
-  text-align: center;
-  font-family: georgia sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  color: #18b8f2;
-  cursor: pointer;
-  width: 350px;
-}
-
-.controls__item_type_depart:hover, .controls__item_type_arrive:hover {
-  background-color: #99e3ff;
-}
-
-.input-depart:checked ~ .arrive-table {
-  display: none;
-}
-
-.input-depart:checked ~ .controls .controls__item_type_depart {
-  color: white;
-  background-color: #18b8f2;
-}
-
-.input-arrive:checked ~ .depart-table {
-  display: none;
-}
-
-.input-arrive:checked ~ .controls .controls__item_type_arrive {
-  color: white;
-  background-color: #18b8f2;
-}
-
-.depart-table {
-  width: 80%;
-  margin-top: 30px;
-  margin-left: 10%;
-  margin-right: 10%;
-  border-radius: 10px;
-  font-family: georgia sans-serif;
-  font-size: 18px;
   border-collapse: collapse;
-  text-align: center;
+  font-family: arial;
 }
 
-.depart-table__header {
-  background-color: #18b8f2;
-  color: white;
 
-}
-
-.depart-table__header-column_type_top-left-radius {
-  border-top-left-radius: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.depart-table__header-column_type_top-right-radius {
-  border-top-right-radius: 10px;
-}
-
-.depart-table__body {
+.flights-details {
   background-color: white;
 }
 
-.depart-table__body-row_no-top-border {
-  cursor: pointer;
+.flights-details__hour-information:not(:first-child) {
+  border-top: solid 1px;
+  border-color: lightgray;
 }
 
-.depart-table__body-row_no-top-border:hover {
-  background-color: lightgray;
-}
-
-.depart-table__body-row {
-  border-top: solid 1px lightgray;
-  cursor: pointer;
-}
-
-.depart-table__body-row:hover {
-  background-color: lightgray;
-}
-
-.depart-table__body-column_status_good {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  color: green;
+.flights-details__hour {
+  padding-left: 10%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
   font-weight: bold;
+  text-align: left;
+  color: #18b8f2;
 }
 
-.depart-table__body-column_status_bad {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  color: red;
+.flights-details__time {
+  text-align: center;
+  color: #525456;
+}
+
+.flights-details__city {
   font-weight: bold;
+  color: #525456;
+}
+
+.flights-details__list {
+  padding-bottom: 10px;
+  font-size: 10px;
+  color: #525456;
+}
+
+.flights-details__number {
+  color: #18b8f2;
+  text-decoration: none;
+}
+
+.flights-details__number:hover {
+  color: #69cbef;
 }

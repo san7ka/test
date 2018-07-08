@@ -6,400 +6,370 @@
         <title>Departure\Arriving table</title>
     </head>
     <body>
-      <input class="input-depart" type="radio" name="switch"  id="input-depart" checked />
-      <input class="input-arrive" type="radio" name="switch" id="input-arrive" />
+      <!-- Form -->
       <form class="controls">
-        <label class="controls__item_type_depart" for="input-depart">Departure</label>
-        <label class="controls__item_type_arrive" for="input-arrive">Arrival</label>
-      </form>
-      <table class="depart-table">
-        <thead class="depart-table__header">
-          <tr>
-            <th class="depart-table__header-column_type_top-left-radius">Airline</th>
-            <th>Flight</th>
-            <th>Terminal</th>
-            <th>Gate</th>
-            <th>Destination</th>
-            <th>Departs</th>
-            <th class="depart-table__header-column_type_top-right-radius">Status</th>
-          </tr>
-        </thead>
-        <tbody class="depart-table__body">
-          <tr class="depart-table__body-row_no-top-border">
-            <td><img src="img/AmericanAirlines.jpg"></td>
-            <td>AA1598</td>
-            <td>4</td>
-            <td>47A</td>
-            <td>Chicago</td>
-            <td>12 Jun 7:15 AM</td>
-            <td class="depart-table__body-column_status_good">Departed</td>
-          </tr>
-          <tr class="depart-table__body-row">
-            <td><img src="img/BritishAirways.gif"></td>
-            <td>BA4365</td>
-            <td>4</td>
-            <td>47A</td>
-            <td>Chicago</td>
-            <td>12 Jun 7:15 AM</td>
-            <td class="depart-table__body-column_status_good">Departed</td>
-          </tr>
-          <tr class="depart-table__body-row">
-            <td><img src="img/Iberia.gif"></td>
-            <td>IB7185</td>
-            <td>4</td>
-            <td>47A</td>
-            <td>Chicago</td>
-            <td>12 Jun 7:15</td>
-            <td class="depart-table__body-column_status_good">Departed</td>
-          </tr>
-          <tr class="depart-table__body-row">
-            <td><img src="img/Malaysia.gif"></td>
-            <td>MH9348</td>
-            <td>4</td>
-            <td>47A</td>
-            <td>Chicago</td>
-            <td>12 Jun 7:15</td>
-            <td class="depart-table__body-column_status_good">Departed</td>
-          </tr>
-          <tr class="depart-table__body-row">
-            <td><img src="img/United.jpg"></td>
-            <td>UA1493</td>
-            <td>8</td>
-            <td>81</td>
-            <td>Honolulu</td>
-            <td>12 Jun 11:05 AM</td>
-            <td class="depart-table__body-column_status_bad">Delayed 12:35 PM</td>
-          </tr>
-          <tr class="depart-table__body-row">
-            <td><img src="img/AmericanAirlines.jpg"></td>
-            <td>AA1030</td>
-            <td>4</td>
-            <td>40</td>
-            <td>New Orleans</td>
-            <td>12 Jun 11:20 AM</td>
-            <td class="depart-table__body-column_status_good">Departed</td>
-          </tr>
-          <tr class="depart-table__body-row">
-            <td><img src="img/Alaska.jpg"></td>
-            <td>AS6392</td>
-            <td>4</td>
-            <td>40</td>
-            <td>New Orleans</td>
-            <td>12 Jun 11:20 AM</td>
-            <td class="depart-table__body-column_status_good">Departed</td>
-          <tr class="depart-table__body-row">
-            <td><img src="img/LAN.gif"></td>
-            <td>LA6968</td>
-            <td>4</td>
-            <td>40</td>
-            <td>New Orleans</td>
-            <td>12 Jun 11:20 AM</td>
-            <td class="depart-table__body-column_status_good">Departed</td>
-          </tr>
-          <tr class="depart-table__body-row">
-            <td><img src="img/Quantas.gif"></td>
-            <td>QF4331</td>
-            <td>4</td>
-            <td>40</td>
-            <td>New Orleans</td>
-            <td>12 Jun 11:20 AM</td>
-            <td class="depart-table__body-column_status_good">Departed</td>
-          </tr>
-          <tr class="depart-table__body-row">
-            <td><img src="img/SouthWest.gif"></td>
-            <td>WN390</td>
-            <td>1</td>
-            <td>17A</td>
-            <td>Las Vegas</td>
-            <td>12 Jun 11:30 AM</td>
-            <td class="depart-table__body-column_status_good">Departed</td>
-          </tr>
-          <tr class="depart-table__body-row">
-            <td><img src="img/United.jpg"></td>
-            <td>UA5337</td>
-            <td>8</td>
-            <td>86A</td>
-            <td>Monterey</td>
-            <td>12 Jun 11:35 AM</td>
-            <td class="depart-table__body-column_status_good">Departed</td>
-          </tr>
-          <tr class="depart-table__body-row">
-            <td><img src="img/AirCanada.gif"></td>
-            <td>AC4011</td>
-            <td>8</td>
-            <td>86A</td>
-            <td>Monterey</td>
-            <td>12 Jun 11:35 AM</td>
-            <td class="depart-table__body-column_status_good">Departed</td>
-          </tr>
-          <tr class="depart-table__body-row">
-            <td><img src="img/United.jpg"></td>
-            <td>UA1734</td>
-            <td>7</td>
-            <td>71A</td>
-            <td>Dallas-Fort Worth</td>
-            <td>12 Jun 11:39 AM</td>
-            <td class="depart-table__body-column_status_bad">Delayed 2:30 PM</td>
-          </tr>
-          <tr class="depart-table__body-row">
-            <td><img src="img/Alaska.jpg"></td>
-            <td>AS1232</td>
-            <td>6</td>
-            <td>61</td>
-            <td>Chicago</td>
-            <td>12 Jun 11:40 AM</td>
-            <td class="depart-table__body-column_status_good">Departed</td>
-          </tr>
-          <tr class="depart-table__body-row">
-            <td><img src="img/Singapore.gif"></td>
-            <td>SQ1315</td>
-            <td>6</td>
-            <td>61</td>
-            <td>Chicago</td>
-            <td>12 Jun 11:40 AM</td>
-            <td class="depart-table__body-column_status_good">Departed</td>
-          </tr>
-          <tr class="depart-table__body-row">
-            <td><img src="img/AllNippon.gif"></td>
-            <td>NH175</td>
-            <td>B</td>
-            <td>47A</td>
-            <td>Tokyo</td>
-            <td>12 Jun 11:45 AM</td>
-            <td class="depart-table__body-column_status_bad">Delayed 12:30 PM</td>
-          </tr>
-          <tr class="depart-table__body-row">
-            <td><img src="img/United.jpg"></td>
-            <td>UA7925</td>
-            <td>B</td>
-            <td>47A</td>
-            <td>Tokyo</td>
-            <td>12 Jun 11:45 AM</td>
-            <td class="depart-table__body-column_status_bad">Delayed 12:30 PM</td>
-          </tr>
-          <tr class="depart-table__body-row">
-            <td><img src="img/LAN.gif"></td>
-            <td>LA5098</td>
-            <td>6</td>
-            <td>63</td>
-            <td>Seattle</td>
-            <td>12 Jun 11:51 AM</td>
-            <td class="depart-table__body-column_status_good">Departed</td>
-          </tr>
-          <tr class="depart-table__body-row">
-            <td><img src="img/Alaska.jpg"></td>
-            <td>AS881</td>
-            <td>6</td>
-            <td>63</td>
-            <td>Seattle</td>
-            <td>12 Jun 11:51 AM</td>
-            <td class="depart-table__body-column_status_good">Departed</td>
-          </tr>
-          <tr class="depart-table__body-row">
-            <td><img src="img/Emirates.gif"></td>
-            <td>EK3051</td>
-            <td>6</td>
-            <td>63</td>
-            <td>Seattle</td>
-            <td>12 Jun 11:51 AM</td>
-            <td class="depart-table__body-column_status_good">Departed</td>
-          </tr>
-        </tbody>
-      </table>
-      <table class="arrive-table">
-          <thead>
-            <tr>
-                <th class="leftRadius">Airline</th>
-                <th>Flight</th>
-                <th>Terminal</th>
-                <th>Gate</th>
-                <th>Origin</th>
-                <th>Arrives</th>
-                <th class="rightRadius">Status</th>
+        <!-- Controls -->
+        <input class="controls__input-depart" type="radio" name="switch"  id="input-depart" checked />
+        <input class="controls__input-arrive" type="radio" name="switch" id="input-arrive" />
+        <div class="controls__switch-form">
+          <label class="controls__item_type_depart" for="input-depart">Departure</label>
+          <label class="controls__item_type_arrive" for="input-arrive">Arrival</label>
+        </div>
+        <!-- Controls -->
+        <!-- Depart table -->
+        <div class="depart-table">
+          <table class="table">
+            <!-- Depart table header -->
+            <thead class="flights-info">
+              <tr>
+                <th class="flights-info__time" colspan="5"><object type="image/svg+xml" data="img/clock.svg" width="14%" height="14%"></object>
+                <span class="flights-info__time-item">7<span class="flights-info__blinker">:</span>02 am</span>
+                <span class="flights-info__date-item">18.04.2018</th>
+              </tr>
+              <tr>
+                <th class="flights-info__header">Departs</th>
+                <th class="flights-info__header">Destination/Flight</th>
+                <th class="flights-info__header">Terminal</th>
+                <th class="flights-info__header">Gate</th>
+                <th class="flights-info__header">Status</th>
+              </tr>
+            </thead>
+            <!-- Depart table header -->
+            <!-- Depart table body -->
+            <tbody class="flights-details">
+              <tr class="flights-details__hour-information">
+                <td class="flights-details__hour" colspan="5">7:00 am</td>
+              </tr>
+              <tr>
+                <td class="flights-details__time">7:15 am</td>
+                <td class="flights-details__city">Chicago</td>
+                <td class="flights-details__terminal-number">4</td>
+                <td class="flights-details__gate">47A</td>
+                <td class="flights-details__status">Departed</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td class="flights-details__list">
+                  <a class="flights-details__number" href="plane-details.html" target="_blank">AA1598</a>
+                  <a class="flights-details__number" href="plane-details.html" target="_blank">BA4365</a>
+                  <a class="flights-details__number" href="plane-details.html" target="_blank">IB7185</a>
+                  <a class="flights-details__number" href="plane-details.html" target="_blank">MH9348</a>
+                </td>
+                <td class="flights-details__codeshare" colspan="3">
+                  <div>
+                  </div>
+                </td>
+                <!-- <td></td>
+                <td></td> -->
+              </tr>
+              <tr class="flights-details__hour-information">
+                <td class="flights-details__hour" colspan="5">11:00 am</td>
+              </tr>
+              <tr>
+                <td class="flights-details__time">11:05 am</td>
+                <td class="flights-details__city">Honolulu</td>
+                <td class="flights-details__terminal-number">8</td>
+                <td class="flights-details__gate">81</td>
+                <td class="flights-details__status">Delayed 12:35 PM</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td class="flights-details__list">
+                  <a class="flights-details__number" href="plane-details.html" target="_blank">UA1493</a>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="flights-details__time">11:20 am</td>
+                <td class="flights-details__city">Las Vegas</td>
+                <td class="flights-details__terminal-number">1</td>
+                <td class="flights-details__gate">17A</td>
+                <td class="flights-details__status">Departed</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td class="flights-details__list">
+                  <a class="flights-details__number" href="plane-details.html" target="_blank">AA1030</a>
+                  <a class="flights-details__number" href="plane-details.html" target="_blank">AS6392</a>
+                  <a class="flights-details__number" href="plane-details.html" target="_blank">LA6968</a>
+                  <a class="flights-details__number" href="plane-details.html" target="_blank">QF4331</a>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="flights-details__time">11:30 am</td>
+                <td class="flights-details__city">New Orleans</td>
+                <td class="flights-details__terminal-number">4</td>
+                <td class="flights-details__gate">40</td>
+                <td class="flights-details__status">Departed</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td class="flights-details__list">
+                  <a class="flights-details__number" href="plane-details.html" target="_blank">WN390</a>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="flights-details__time">11:35 am</td>
+                <td class="flights-details__city">Monterey</td>
+                <td class="flights-details__terminal-number">8</td>
+                <td class="flights-details__gate">86A</td>
+                <td class="flights-details__status">Departed</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td class="flights-details__list">
+                  <a class="flights-details__number" href="plane-details.html" target="_blank">UA5337</a>
+                  <a class="flights-details__number" href="plane-details.html" target="_blank">AC4011</a>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="flights-details__time">11:45 am</td>
+                <td class="flights-details__city">Dallas-Fort Worth</td>
+                <td class="flights-details__terminal-number">7</td>
+                <td class="flights-details__gate">71A</td>
+                <td class="flights-details__status">Delayed 2:30 PM</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td class="flights-details__list">
+                  <a class="flights-details__number" href="plane-details.html" target="_blank">UA1734</a>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="flights-details__time">11:57 am</td>
+                <td class="flights-details__city">Chicago</td>
+                <td class="flights-details__terminal-number">6</td>
+                <td class="flights-details__gate">61</td>
+                <td class="flights-details__status">Departed</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td class="flights-details__list">
+                  <a class="flights-details__number" href="plane-details.html" target="_blank">AS1232</a>
+                  <a class="flights-details__number" href="plane-details.html" target="_blank">SQ1315</a>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="flights-details__hour-information">
+                <td class="flights-details__hour" colspan="5">12:00 pm</td>
+              </tr>
+              <tr>
+                <td class="flights-details__time">12:07 pm</td>
+                <td class="flights-details__city">Tokyo</td>
+                <td class="flights-details__terminal-number">B</td>
+                <td class="flights-details__gate">47A</td>
+                <td class="flights-details__status">Delayed 15:35 PM</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td class="flights-details__list">
+                  <a class="flights-details__number" href="plane-details.html" target="_blank">NH175</a>
+                  <a class="flights-details__number" href="plane-details.html" target="_blank">UA7925</a>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="flights-details__time">12:14 pm</td>
+                <td class="flights-details__city">Seattle</td>
+                <td class="flights-details__terminal-number">6</td>
+                <td class="flights-details__gate">63</td>
+                <td class="flights-details__status">Departed</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td class="flights-details__list">
+                  <a class="flights-details__number" href="plane-details.html" target="_blank">LA5098</a>
+                  <a class="flights-details__number" href="plane-details.html" target="_blank">AS881</a>
+                  <a class="flights-details__number" href="plane-details.html" target="_blank">EK3051</a>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+            <!-- Depart table body -->
+          </table>
+        </div>
+        <!-- Depart table -->
+        <!-- Arrive table -->
+        <div class="arrive-table">
+          <table class="table">
+            <!-- Arrive table header -->
+            <thead class="flights-info">
+              <tr>
+                <th class="flights-info__time" colspan="5"><object type="image/svg+xml" data="img/clock.svg" width="14%" height="14%"></object>
+                <span class="flights-info__time-item">7<span class="flights-info__blinker">:</span>02 am</span>
+                <span class="flights-info__date-item">18.04.2018</th>
+              </tr>
+              <tr>
+                <th class="flights-info__header">Arrives</th>
+                <th class="flights-info__header">Origin/Flight</th>
+                <th class="flights-info__header">Terminal</th>
+                <th class="flights-info__header">Gate</th>
+                <th class="flights-info__header">Status</th>
             </tr>
           <thead>
+            <!-- Arrive table header -->
+            <!-- Arrive table body -->
+          <tbody  class="flights-details">
+            <tr class="flights-details__hour-information">
+              <td class="flights-details__hour" colspan="5">11:00 am</td>
+            </tr>
+            <tr>
+              <td class="flights-details__time">11:51 am</td>
+              <td class="flights-details__city">London</td>
+              <td class="flights-details__terminal-number">2</td>
+              <td class="flights-details__gate"></td>
+              <td class="flights-details__status">Landed</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="flights-details__list">
+                <a class="flights-details__number" href="plane-details.html" target="_blank">VS7</a>
+                <a class="flights-details__number" href="plane-details.html" target="_blank">DL4384</a>
+                <a class="flights-details__number" href="plane-details.html" target="_blank">SQ2507</a>
+                <a class="flights-details__number" href="plane-details.html" target="_blank">VA5351</a>
+                <a class="flights-details__number" href="plane-details.html" target="_blank">9W5818</a>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="flights-details__hour-information">
+              <td class="flights-details__hour" colspan="5">12:00 pm</td>
+            </tr>
+            <tr>
+              <td class="flights-details__time">12:00 am</td>
+              <td class="flights-details__city">Orlando</td>
+              <td class="flights-details__terminal-number">3</td>
+              <td class="flights-details__gate">36</td>
+              <td class="flights-details__status">Cancelled</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="flights-details__list">
+                <a class="flights-details__number" href="plane-details.html" target="_blank">DL1659</a>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="flights-details__time">12:00 am</td>
+              <td class="flights-details__city">Orlando</td>
+              <td class="flights-details__terminal-number">3</td>
+              <td class="flights-details__gate">36</td>
+              <td class="flights-details__status">Landed</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="flights-details__list">
+                <a class="flights-details__number" href="plane-details.html" target="_blank">VA6866</a>
+                <a class="flights-details__number" href="plane-details.html" target="_blank">VS2224</a>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="flights-details__time">12:04 am</td>
+              <td class="flights-details__city">Las Vegas</td>
+              <td class="flights-details__terminal-number">5</td>
+              <td class="flights-details__gate">50B</td>
+              <td class="flights-details__status">Arrived</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="flights-details__list">
+                <a class="flights-details__number" href="plane-details.html" target="_blank">AA1366</a>
+                <a class="flights-details__number" href="plane-details.html" target="_blank">QF4418</a>
+                <a class="flights-details__number" href="plane-details.html" target="_blank">TN1165</a>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="flights-details__time">12:47 am</td>
+              <td class="flights-details__city">Toronto</td>
+              <td class="flights-details__terminal-number">2</td>
+              <td class="flights-details__gate">21B</td>
+              <td class="flights-details__status">Landed</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="flights-details__list">
+                <a class="flights-details__number" href="plane-details.html" target="_blank">WS1100</a>
+                <a class="flights-details__number" href="plane-details.html" target="_blank">DL7091</a>
+                <a class="flights-details__number" href="plane-details.html" target="_blank">QF3990</a>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="flights-details__hour-information">
+              <td class="flights-details__hour" colspan="5">1:00 pm</td>
+            </tr>
+            <tr>
+              <td class="flights-details__time">1:24 pm</td>
+              <td class="flights-details__city">Toronto</td>
+              <td class="flights-details__terminal-number">2</td>
+              <td class="flights-details__gate">21B</td>
+              <td class="flights-details__status">Arrived</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="flights-details__list">
+                <a class="flights-details__number" href="plane-details.html" target="_blank">AC785</a>
+                <a class="flights-details__number" href="plane-details.html" target="_blank">NZ4821</a>
+                <a class="flights-details__number" href="plane-details.html" target="_blank">SQ1055</a>
+                <a class="flights-details__number" href="plane-details.html" target="_blank">UA8337</a>
+                <a class="flights-details__number" href="plane-details.html" target="_blank">VA5181</a>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="flights-details__time">1:55 pm</td>
+              <td class="flights-details__city">New York</td>
+              <td class="flights-details__terminal-number">5</td>
+              <td class="flights-details__gate">55A</td>
+              <td class="flights-details__status">Arrived</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="flights-details__list">
+                <a class="flights-details__number" href="plane-details.html" target="_blank">B6323</a>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
           <tbody>
-              <tr class="noBorder">
-                <td><img src="img/VirginAtlantic.gif"></td>
-                <td>VS7</td>
-                <td>2</td>
-                <td></td>
-                <td>London</td>
-                <td>12 Jun 11:51 AM</td>
-                <td>Landed 11:51 AM</td>
-              </tr>
-              <tr>
-                <td><img src="img/Delta.jpg"></td>
-                <td>DL4384</td>
-                <td>2</td>
-                <td></td>
-                <td>London</td>
-                <td>12 Jun 11:51 AM</td>
-                <td>Landed 11:51 AM</td>
-              </tr>
-              <tr>
-                <td><img src="img/Singapore.gif"></td>
-                <td>SQ2507</td>
-                <td>2</td>
-                <td></td>
-                <td>London</td>
-                <td>12 Jun 11:51 AM</td>
-                <td>Landed 11:51 AM</td>
-              </tr>
-              <tr>
-                <td><img src="img/Australia.gif"></td>
-                <td>VA5351</td>
-                <td>2</td>
-                <td></td>
-                <td>London</td>
-                <td>12 Jun 11:51 AM</td>
-                <td>Landed 11:51 AM</td>
-              </tr>
-              <tr>
-                <td><img src="img/JetAirways.png"></td>
-                <td>9W5818</td>
-                <td>2</td>
-                <td></td>
-                <td>London</td>
-                <td>12 Jun 11:51 AM</td>
-                <td>Landed 11:51 AM</td>
-              </tr>
-              <tr>
-                <td><img src="img/Delta.jpg"></td>
-                <td>DL1659</td>
-                <td>3</td>
-                <td>36</td>
-                <td>Orlando</td>
-                <td>12 Jun 12:00 PM</td>
-                <td>Cancelled</td>
-              </tr>
-              <tr>
-                <td><img src="img/Australia.gif"></td>
-                <td>VA6866</td>
-                <td>3</td>
-                <td>36</td>
-                <td>Orlando</td>
-                <td>12 Jun 12:00 PM</td>
-                <td>Arrived 12:00 PM</td>
-              </tr>
-              <tr>
-                <td><img src="img/VirginAtlantic.gif"></td>
-                <td>VS2224</td>
-                <td>3</td>
-                <td>36</td>
-                <td>Orlando</td>
-                <td>12 Jun 12:00 PM</td>
-                <td>Arrived 12:00 PM</td>
-              </tr>
-              <tr>
-                <td><img src="img/AmericanAirlines.jpg"></td>
-                <td>AA1366</td>
-                <td>5</td>
-                <td>50B</td>
-                <td>Las Vegas</td>
-                <td>12 Jun 12:04 PM</td>
-                <td>Arrived 12:04 PM</td>
-              </tr>
-              <tr>
-                <td><img src="img/Quantas.gif"></td>
-                <td>QF4418</td>
-                <td>5</td>
-                <td>50B</td>
-                <td>Las Vegas</td>
-                <td>12 Jun 12:04 PM</td>
-                <td>Arrived 12:04 PM</td>
-              </tr>
-              <tr>
-                <td><img src="img/Tahiti.gif"></td>
-                <td>TN1165</td>
-                <td>5</td>
-                <td>50B</td>
-                <td>Las Vegas</td>
-                <td>12 Jun 12:04 PM</td>
-                <td>Arrived 12:04 PM</td>
-              </tr>
-              <tr>
-                <td><img src="img/WestJet.gif"></td>
-                <td>WS1100</td>
-                <td>2</td>
-                <td>21B</td>
-                <td>Toronto</td>
-                <td>12 Jun 12:05 PM</td>
-                <td>Landed 12:05 PM</td>
-              </tr>
-              <tr>
-                <td><img src="img/Delta.jpg"></td>
-                <td>DL7091</td>
-                <td>2</td>
-                <td>21B</td>
-                <td>Toronto</td>
-                <td>12 Jun 12:05 PM</td>
-                <td>Landed 12:05 PM</td>
-              </tr>
-              <tr>
-                <td><img src="img/Quantas.gif"></td>
-                <td>QF3990</td>
-                <td>2</td>
-                <td>21B</td>
-                <td>Toronto</td>
-                <td>12 Jun 12:05 PM</td>
-                <td>Landed 12:05 PM</td>
-              </tr>
-              <tr>
-                <td><img src="img/AirCanada.gif"></td>
-                <td>AC785</td>
-                <td>6</td>
-                <td>69B</td>
-                <td>Toronto</td>
-                <td>12 Jun 12:06 PM</td>
-                <td>Arrived 12:06 PM</td>
-              </tr>
-              <tr>
-                <td><img src="img/NewZeland.gif"></td>
-                <td>NZ4821</td>
-                <td>6</td>
-                <td>69B</td>
-                <td>Toronto</td>
-                <td>12 Jun 12:06 PM</td>
-                <td>Arrived 12:06 PM</td>
-              </tr>
-              <tr>
-                <td><img src="img/Singapore.gif"></td>
-                <td>SQ1055</td>
-                <td>6</td>
-                <td>69B</td>
-                <td>Toronto</td>
-                <td>12 Jun 12:06 PM</td>
-                <td>Arrived 12:06 PM</td>
-              </tr>
-              <tr>
-                <td><img src="img/United.jpg"></td>
-                <td>UA8337</td>
-                <td>6</td>
-                <td>69B</td>
-                <td>Toronto</td>
-                <td>12 Jun 12:06 PM</td>
-                <td>Arrived 12:06 PM</td>
-              </tr>
-              <tr>
-                <td><img src="img/Australia.gif"></td>
-                <td>VA5181</td>
-                <td>6</td>
-                <td>69B</td>
-                <td>Toronto</td>
-                <td>12 Jun 12:06 PM</td>
-                <td>Arrived 12:06 PM</td>
-              </tr>
-              <tr>
-                <td><img src="img/JetAirways.png"></td>
-                <td>B6323</td>
-                <td>5</td>
-                <td>55A</td>
-                <td>New York</td>
-                <td>12 Jun 12:06 PM</td>
-                <td>Arrived 12:06 PM</td>
-              </tr>
-          <tbody>
+            <!-- Arrive table body -->
         </table>
+      </div>
+      <!-- Arrive table -->
+      </form>
+      <!-- Form -->
     </body>
 </html>

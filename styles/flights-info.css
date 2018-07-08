@@ -1,0 +1,46 @@
+.flights-info {
+  background-color: #18b8f2;
+}
+
+.flights-info__time {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  text-align: left;
+  color: lightgray;
+}
+
+.flights-info__time-item {
+  padding-right: 40px;
+}
+
+.flights-info__blinker {
+  animation-name: blinker;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+  animation-duration: 1s;
+  -webkit-animation-name: blinker;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+  -webkit-animation-duration: 1s;
+  color: lightgray;
+}
+
+@keyframes blinker {
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+
+@-webkit-keyframes blinker {
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+
+.flights-info__header {
+  padding: 5px;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+}
