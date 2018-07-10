@@ -1,15 +1,15 @@
-.controls__switch-form {
+.controls__wrapper {
   margin-top: 30px;
   width: 720px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.controls__input-depart, .controls__input-arrive {
+.buttons {
   display: none;
 }
 
-.controls__item_type_depart, .controls__item_type_arrive {
+.controls__item {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
@@ -24,24 +24,24 @@
   width: 350px;
 }
 
-.controls__item_type_depart:hover, .controls__item_type_arrive:hover {
+.controls__item:hover {
   background-color: #99e3ff;
 }
 
-.controls__input-depart:checked ~ .arrive-table {
+.button__type_depart:checked ~ .schedule_type_arrive {
   display: none;
 }
 
-.controls__input-depart:checked ~ .controls__switch-form .controls__item_type_depart {
+.button__type_depart:checked ~ .controls__wrapper .controls__item_type_depart {
   color: white;
   background-color: #18b8f2;
 }
 
-.controls__input-arrive:checked ~ .depart-table {
+.button__type_arrive:checked ~ .schedule_type_depart {
   display: none;
 }
 
-.controls__input-arrive:checked ~ .controls__switch-form .controls__item_type_arrive {
+.button__type_arrive:checked ~ .controls__wrapper .controls__item_type_arrive {
   color: white;
   background-color: #18b8f2;
 }

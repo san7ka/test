@@ -5,11 +5,14 @@
 
 
 
-.table {
+.schedule {
+  width: 80%;
   margin-top: 30px;
   border-radius: 10px;
   border-collapse: collapse;
   font-family: arial;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -18,7 +21,7 @@
 }
 
 .flights-details__hour-information:not(:first-child) {
-  border-top: solid 1px;
+  border-top: solid 2px;
   border-color: lightgray;
 }
 
@@ -26,25 +29,31 @@
   padding-left: 10%;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
   text-align: left;
   color: #18b8f2;
 }
 
+.flights-details__flight-info {
+  background-color: #e6ebed;
+}
+
 .flights-details__time {
   text-align: center;
   color: #525456;
+  font-size: 18px;
 }
 
 .flights-details__city {
   font-weight: bold;
   color: #525456;
+  font-size: 20px;
 }
 
 .flights-details__list {
   padding-bottom: 10px;
-  font-size: 10px;
+  font-size: 14px;
   color: #525456;
 }
 
@@ -55,4 +64,39 @@
 
 .flights-details__number:hover {
   color: #69cbef;
+}
+
+.flights-details__terminal-number {
+  text-align: center;
+}
+
+.flights-details__gate {
+  text-align: center;
+}
+
+.flights-details__status {
+  font-weight: bold;
+  text-align: center;
+  color: #525456;
+  font-size: 18px;
+}
+
+.flights-details__status_type_warning {
+  background-color: orange;
+  border: solid 1px;
+}
+
+.flights-details__status_type_bad {
+  background-color: red;
+  border: solid 1px;
+}
+
+.flights-details__codeshare-cell {
+  display: inline-block;
+  width: 80%;
+  height: 30px;
+  background-color: #18b8f2;
+  border-top-left-radius: 60px;
+  padding-left: 5%;
+  padding-top: 1.5%;
 }

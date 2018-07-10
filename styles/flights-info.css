@@ -7,7 +7,7 @@
   border-top-right-radius: 10px;
   padding-top: 10px;
   padding-bottom: 15px;
-  font-size: 20px;
+  font-size: 24px;
   text-align: left;
   color: lightgray;
 }
@@ -40,7 +40,7 @@
 
 .flights-info__header {
   padding: 5px;
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
   color: white;
 }
