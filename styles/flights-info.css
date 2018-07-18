@@ -12,6 +12,11 @@
   color: lightgray;
 }
 
+.flights-info__clock {
+  width: 14%;
+  height: 14%;
+}
+
 .flights-info__time-item {
   padding-right: 40px;
 }
